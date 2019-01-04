@@ -19,4 +19,6 @@ example docker-compose run app sh -c "django-admin.py startproject app ."
 
 Example - adding app to django - docker-compose run app sh -c "python manage.py startapp core"
 
+Example running tests - docker-compose run app sh -c "python manage.py test && flake8"
+
 ## Travis Ci
