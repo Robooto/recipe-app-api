@@ -1,0 +1,11 @@
+from django.urls import path
+from user import views
+
+# helps with the reverse function
+app_name = 'user'
+
+# name is for the reverse look up
+urlpatterns = [
+    path('create/', views.CreateUserView.as_view(), name='create'),
+    path('token/', views.CreateTokenView.as_view(), name='token'),
+]
