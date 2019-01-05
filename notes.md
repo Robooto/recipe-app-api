@@ -11,6 +11,8 @@ docker build . - builds the image
 ## Docker Compose
 Set up multiple docker services
 
+docker-compose build - builds docker image
+
 docker-compose run app <command to run>
 
 docker-compose run app sh -c ""  - run command on python server
@@ -21,4 +23,6 @@ Example - adding app to django - docker-compose run app sh -c "python manage.py 
 
 Example running tests - docker-compose run app sh -c "python manage.py test && flake8"
 
+RUN apk add --update --no-cache postgresql-client
+    - installs postgresql-client on our python package
 ## Travis Ci
