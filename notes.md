@@ -8,7 +8,7 @@ Create a user and use that user
 
 docker build . - builds the image
 
-## Docker Compose
+## Docker Compose and django commands
 Set up multiple docker services
 
 docker-compose build - builds docker image
@@ -20,6 +20,7 @@ docker-compose run app sh -c ""  - run command on python server
 example docker-compose run app sh -c "django-admin.py startproject app ."
 
 Example - adding app to django - docker-compose run app sh -c "python manage.py startapp core"
+    - docker-compose run --rm app sh -c "python manage.py startapp user"
 
 Example running tests - docker-compose run app sh -c "python manage.py test && flake8"
 
@@ -46,3 +47,7 @@ Example
 
 ## Random
 Need to restart docker for windows occationally to deal with odd issues
+
+## Runing commands on instance
+docker-compose run --rm app sh -c "python manage.py createsuperuser"
+ - --rm removes container after command is completed
