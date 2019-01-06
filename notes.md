@@ -55,3 +55,5 @@ docker-compose run --rm app sh -c "python manage.py createsuperuser"
 ## ORM stuff
 Need to run migrations after creating a new model
 Then register in the admin site
+
+Don't make char fields null make them blank
