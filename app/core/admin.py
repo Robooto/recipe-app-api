@@ -34,3 +34,4 @@ class UserAdmin(BaseUserAdmin):
 
 # registering the UserAdmin class for the django admin
 admin.site.register(models.User, UserAdmin)
+admin.site.register(models.Tag)
