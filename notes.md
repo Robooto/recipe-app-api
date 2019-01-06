@@ -51,3 +51,7 @@ Need to restart docker for windows occationally to deal with odd issues
 ## Runing commands on instance
 docker-compose run --rm app sh -c "python manage.py createsuperuser"
  - --rm removes container after command is completed
+
+## ORM stuff
+Need to run migrations after creating a new model
+Then register in the admin site
