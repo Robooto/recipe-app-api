@@ -48,6 +48,8 @@ Example
 ## Random
 Need to restart docker for windows occationally to deal with odd issues
 
+getattr(recipe, key) - built into python get attribute
+
 ## Runing commands on instance
 docker-compose run --rm app sh -c "python manage.py createsuperuser"
  - --rm removes container after command is completed
