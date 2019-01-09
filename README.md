@@ -4,6 +4,7 @@ Rest API for creating and managing recipies
 
 ## Start up
 docker-compose build
+
 docker-compose up
 
 ## Tests
