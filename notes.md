@@ -59,3 +59,7 @@ Need to run migrations after creating a new model
 Then register in the admin site
 
 Don't make char fields null make them blank
+
+## Django stuff
+
+adding static handling stuff to the settings.py and the root url area
